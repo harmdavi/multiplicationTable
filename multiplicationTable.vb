@@ -1,4 +1,18 @@
-﻿Option Strict On
+﻿
+
+
+
+'David Harmon
+'RCET0265
+'Fall 2020
+'Multiplication Table
+'https://github.com/harmdavi/multiplicationTable.git
+
+'This code was made possible by Lane Coleman who helped me
+
+
+
+Option Strict On
 Option Explicit On
 Option Compare Text
 
