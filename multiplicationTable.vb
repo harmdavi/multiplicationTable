@@ -28,6 +28,7 @@ Module multiplicationTable
         Do
             Do
                 Console.WriteLine($"Please Enter a Number.")
+                'Try Catch is here to make sure that only numbers can be accepted.
                 Try
                     userinput = Console.ReadLine()
                     number = CInt(userinput)
@@ -41,6 +42,8 @@ Module multiplicationTable
                 Catch
                     Console.WriteLine($"There is a max number of 12")
                     goodData = False
+                    'these quit if/then statement must be here so that the user can quit at the begining 
+                    'as well as the end 
                     If userinput = "q" Then
                         Exit Sub
                     End If
@@ -57,6 +60,7 @@ Module multiplicationTable
             Console.WriteLine($"Enjoy your {number} x {number} Multiplication Table")
             For column = 1 To number
                 For row = 1 To number
+                    'The rows and the columns reffer to the multiplication table rows and columns 
                     multiplicationTable(row, column) = row * column
                     Console.Write(multiplicationTable(row, column) & vbTab)
                 Next
@@ -69,6 +73,7 @@ Module multiplicationTable
                 Exit Sub
 
             End If
+            'Clear at the end of the program to reset so another multiplication table may be generated. 
             Console.Clear()
 
         Loop
